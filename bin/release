@@ -3,10 +3,16 @@
 
 BUILD_DIR=$1
 
+#cat <<-YAML
+#---
+#addons:
+#  - mongolab:sandbox
+#default_process_types:
+#  web: node build/bundle/main.js
+#YAML
+
 cat <<-YAML
 ---
-addons:
-  - mongolab:sandbox
 default_process_types:
   web: node build/bundle/main.js
 YAML
